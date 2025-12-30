@@ -26,10 +26,11 @@ core_dependencies=(
     waybar
     rofi-wayland
     
-    # network manager tui
+    # network, bluetooth
     impala                        
     network-manager-applet
-    
+    bluetui
+
     # audio
     wiremix
     pamixer
