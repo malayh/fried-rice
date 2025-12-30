@@ -1,16 +1,27 @@
 #!/bin/bash
 
 
-system_dependencies=(
-    stow   
+general_tools=(
+    stow
+    yay
+    unzip
+    wget
+    curl   
 )
 
-
-setup_dependencies=(
-    hyprland
+core_dependencies=(
     alacritty
+    hypridle  
+    hyprland
+    hyprlock
+    network-manager-applet
+    uwsm
+    waybar
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
 )
+
 
 sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm "${system_dependencies[@]}"
-sudo pacman -S --noconfirm "${setup_dependencies[@]}"
+sudo pacman -S --noconfirm "${general_tools[@]}"
+sudo pacman -S --noconfirm "${core_dependencies[@]}"
