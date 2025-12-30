@@ -18,4 +18,8 @@ if [ ! -f "$WALLPAPER_PATH" ]; then
 fi
 
 NEW_WALLPAPER_PATH=$(getabsolutePath "$WALLPAPER_PATH")
+rm -f "$HOME/.config/friedrice/theme/currentwallpaper"
 ln -s "$NEW_WALLPAPER_PATH" "$HOME/.config/friedrice/theme/currentwallpaper"
+
+pkill -x swaybg
+setsid uwsm-app -- swaybg -i ~/.config/friedrice/theme/currentwallpaper -m fill >/dev/null 2>&1 &
