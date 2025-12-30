@@ -12,16 +12,26 @@ general_tools=(
 core_dependencies=(
     alacritty
     btop
+
+    # window/session manager for wayland
+    uwsm
+    
+    # hyperland and related packages
     hypridle  
     hyprland
     hyprlock
-    impala
-    network-manager-applet
-    uwsm
-    waybar
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     xdg-terminal-exec
+    waybar
+    
+    # network manager tui
+    impala                        
+    network-manager-applet
+    
+    # audio
+    wiremix
+    pamixer
 )
 
 
