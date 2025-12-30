@@ -113,7 +113,7 @@ error-message {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     5;
+    columns:                     3;
     lines:                       1;
     cycle:                       true;
     dynamic:                     true;
