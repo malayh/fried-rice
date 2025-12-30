@@ -91,7 +91,6 @@ message {
     border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  @foreground;
-    
 }
 textbox {
     background-color:            inherit;
@@ -101,7 +100,6 @@ textbox {
     placeholder-color:           @foreground;
     blink:                       true;
     markup:                      true;
-    
 }
 error-message {
     padding:                     12px;
