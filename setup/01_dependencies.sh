@@ -10,6 +10,7 @@ general_tools=(
 
 core_dependencies=(
     alacritty
+    btop
     hypridle  
     hyprland
     hyprlock
