@@ -13,6 +13,7 @@ core_dependencies=(
     hypridle  
     hyprland
     hyprlock
+    impala
     network-manager-applet
     uwsm
     waybar
