@@ -7,7 +7,7 @@ configuration {
 @import                          "~/.config/rofi/colors/catppuccin.rasi"
 
 * {
-    font:                       "JetBrainsMono Nerd Font Propo 20";
+    font:                       "JetBrainsMono Nerd Font Propo 14";
 }
 
 
@@ -91,6 +91,7 @@ message {
     border-color:                @selected;
     background-color:            @background-alt;
     text-color:                  @foreground;
+    
 }
 textbox {
     background-color:            inherit;
@@ -100,6 +101,7 @@ textbox {
     placeholder-color:           @foreground;
     blink:                       true;
     markup:                      true;
+    
 }
 error-message {
     padding:                     12px;
