@@ -26,6 +26,11 @@ core_dependencies=(
     waybar
     rofi-wayland
     swaybg
+
+    # storing passwords and auth
+    gnome-keyring
+    libsecret
+    polkit-gnome
     
     # network, bluetooth
     impala                        
