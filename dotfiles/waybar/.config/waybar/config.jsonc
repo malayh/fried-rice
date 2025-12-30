@@ -42,14 +42,12 @@
   "cpu": {
     "interval": 5,
     "format": "󰍛",
-    "on-click": "custom-launch-or-focus-tui btop",
-    "on-click-right": "alacritty"
+    "on-click": "custom-launch-or-focus-tui btop --force-utf"
   },
   "clock": {
     "format": "{:L%A %H:%M}",
     "format-alt": "{:L%d %B W%V %Y}",
-    "tooltip": false,
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
+    "tooltip": false
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],

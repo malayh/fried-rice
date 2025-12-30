@@ -5,7 +5,8 @@ general_tools=(
     stow
     unzip
     wget
-    curl   
+    curl
+    jq
 )
 
 core_dependencies=(
@@ -20,6 +21,7 @@ core_dependencies=(
     waybar
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+    xdg-terminal-exec
 )
 
 
