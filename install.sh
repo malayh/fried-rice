@@ -25,6 +25,7 @@ core_dependencies=(
     xdg-terminal-exec
     waybar
     rofi-wayland
+    swaybg
     
     # network, bluetooth
     impala                        
@@ -38,6 +39,9 @@ core_dependencies=(
     # fonts
     ttf-jetbrains-mono-nerd
     ttf-cascadia-mono-nerd
+
+    # asus rog/tuf specific
+    asusctl
 )
 
 
