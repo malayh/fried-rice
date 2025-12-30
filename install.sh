@@ -24,6 +24,7 @@ core_dependencies=(
     xdg-desktop-portal-hyprland
     xdg-terminal-exec
     waybar
+    rofi-wayland
     
     # network manager tui
     impala                        
@@ -32,6 +33,10 @@ core_dependencies=(
     # audio
     wiremix
     pamixer
+
+    # fonts
+    ttf-jetbrains-mono-nerd
+    ttf-cascadia-mono-nerd
 )
 
 
