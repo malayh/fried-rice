@@ -10,6 +10,7 @@ _runrofimenu() {
 
     echo -e "$menu_options" | rofi \
         -dmenu \
+        -i \
         -p "$prompt" \
         -theme-str "textbox-prompt-colon {str: '$icon';}" \
         -theme ${dir}/theme.rasi
