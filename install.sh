@@ -66,9 +66,13 @@ core_dependencies=(
 )
 
 user_apps=(
-    
+    # docker and stuff
+    docker
+    docker-compose
+    flatpak
 )
 
 sudo yay -Syu --noconfirm
 _installPackages "${general_tools[@]}"
 _installPackages "${core_dependencies[@]}"
+_installPackages "${user_apps[@]}"
