@@ -62,6 +62,7 @@ core_dependencies=(
     grim
     wayfreeze
     satty
+    # gpu-screen-recorder
 )
 
 user_apps=(
