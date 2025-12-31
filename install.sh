@@ -28,6 +28,10 @@ core_dependencies=(
     rofi-wayland
     swaybg
 
+    # clipboard manager
+    cliphist
+    wtype
+
     # storing passwords and auth
     gnome-keyring
     libsecret
@@ -52,6 +56,10 @@ core_dependencies=(
 
     # asus rog/tuf specific
     asusctl
+)
+
+user_apps=(
+    
 )
 
 sudo yay -Syu --noconfirm
