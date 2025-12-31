@@ -36,10 +36,11 @@ window {
     padding:                     0px;
     border:                      1px solid;
     border-radius:               12px;
-    border-color:                @selected;
+    border-color:                @background-alt;
     background-color:            @background;
     cursor:                      "default";
-    backdrop:                    "blur(20px)";
+    backdrop:                    "blur(10px)";
+    drop-shadow:                 true;
 }
 
 /*****----- Main Box -----*****/
@@ -155,10 +156,7 @@ element {
     text-color:                  @foreground;
     cursor:                      pointer;
 }
-element normal.normal {
-    background-color:            @background;
-    text-color:                  @foreground;
-}
+
 element selected.normal {
     background-color:            @selected;
     text-color:                  @background;
