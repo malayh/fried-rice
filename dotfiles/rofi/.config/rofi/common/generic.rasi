@@ -85,23 +85,6 @@ prompt-content {
     children:                    [ "prompt-ts", "prompt", "prompt-bs" ];
 }
 
-input-ts {
-    expand:                      true;
-    background-color:            transparent;
-}
-input-bs {
-    expand:                      true;
-    background-color:            transparent;
-}
-
-inputboxconent {
-    background-color:            @background-alt;
-    text-color:                  @foreground;
-    orientation:                 horizontal;
-    children:                    ["entry"];
-}
-
-
 prompt {
     enabled:                     true;
     background-color:            inherit;
@@ -140,7 +123,6 @@ listview {
     scrollbar:                   false;
     layout:                      vertical;
     reverse:                     false;
-    fixed-height:                true;
     fixed-columns:               true;
     
     spacing:                     5px;
