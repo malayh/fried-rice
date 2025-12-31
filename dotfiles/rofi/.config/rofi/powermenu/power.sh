@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 dir="$HOME/.config/rofi/powermenu"
 
 # CMDs
@@ -9,6 +8,7 @@ host=`hostname`
 
 # Options
 shutdown=' Power off'
+suspend=' Suspend'
 reboot=' Reboot'
 lock=' Lock'
 yes=''
@@ -42,44 +42,24 @@ confirm_exit() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$lock\n$reboot\n$shutdown" | rofi_cmd
+	echo -e "$lock\n$suspend\n$reboot\n$shutdown" | rofi_cmd
 }
 
-
-closehyperlandwindows() {
-	# close all open windows
-	hyprctl clients -j | \
-	jq -r ".[].address" | \
-	xargs -I{} hyprctl dispatch closewindow address:{}
-	hyprctl dispatch workspace 1
-}
-
-
-poweroff() {
-    # close all open windows
-    hyprctl clients -j | \
-    jq -r ".[].address" | \
-    xargs -I{} hyprctl dispatch closewindow address:{}
-
-    # Move to first workspace
-    hyprctl dispatch workspace 1
-    systemctl poweroff --no-wall
-}
-
-lockscreen() {
-	pidof hyprlock || hyprlock &
-}
 
 # Execute Command
 run_cmd() {
 	selected="$(confirm_exit)"
 	if [[ "$selected" == "$yes" ]]; then
 		if [[ $1 == '--shutdown' ]]; then
-            poweroff
+			custom-close-hypr-windows
+            systemctl poweroff --no-wall
 		elif [[ $1 == '--reboot' ]]; then
 			systemctl reboot
 		elif [[ $1 == '--lock' ]]; then
-			lockscreen
+			custom-lock-screen
+		elif [[ $1 == '--suspend' ]]; then
+			custom-lock-screen
+			systemctl suspend
 		fi
 	else
 		exit 0
@@ -95,6 +75,9 @@ case ${chosen} in
     $reboot)
 		run_cmd --reboot
         ;;
+	$suspend)
+		run_cmd --suspend
+		;;
     $lock)
 		run_cmd --lock
         ;;
