@@ -13,7 +13,7 @@ _runrofimenu() {
         -i \
         -p "$prompt" \
         -theme-str "textbox-prompt-colon {str: '$icon';}" \
-        -theme ${dir}/theme.rasi
+        -theme ${dir}/generic.rasi
 }
 
 # Usage:
