@@ -56,6 +56,12 @@ core_dependencies=(
 
     # asus rog/tuf specific
     asusctl
+
+    # screenshot
+    slurp
+    grim
+    wayfreeze
+    satty
 )
 
 user_apps=(
