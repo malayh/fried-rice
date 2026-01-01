@@ -13,6 +13,7 @@ general_tools=(
 core_dependencies=(
     alacritty
     btop
+    fzf
 
     # window/session manager for wayland
     uwsm
