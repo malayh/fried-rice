@@ -72,6 +72,7 @@ user_apps=(
     docker
     docker-compose
     flatpak
+    just
 )
 
 sudo yay -Syu --noconfirm
