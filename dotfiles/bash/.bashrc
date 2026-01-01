@@ -116,3 +116,14 @@ shopt -s histappend
 alias l="ls -lrt"
 PATH=$PATH:$HOME/.config/scripts
 
+source /home/malay/.helpers/aws.bash
+source /home/malay/.helpers/docker-compose.bash
+source /home/malay/.helpers/git.bash
+source /home/malay/.helpers/justfile.bash
+source /home/malay/.helpers/kubernates.bash
+source /home/malay/.helpers/misc.bash
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export AWS_PROFILE=osuite

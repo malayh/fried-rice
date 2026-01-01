@@ -28,6 +28,7 @@ core_dependencies=(
     waybar
     rofi-wayland
     swaybg
+    mako
 
     # clipboard manager
     cliphist
