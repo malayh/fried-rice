@@ -66,6 +66,10 @@ core_dependencies=(
     wayfreeze
     satty
     # gpu-screen-recorder
+
+    # monitor control
+    ddcutil
+    
 )
 
 user_apps=(
@@ -80,3 +84,5 @@ sudo yay -Syu --noconfirm
 _installPackages "${general_tools[@]}"
 _installPackages "${core_dependencies[@]}"
 _installPackages "${user_apps[@]}"
+
+./_extra_installs.sh
