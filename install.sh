@@ -55,6 +55,8 @@ core_dependencies=(
     # theme
     bibata-cursor-theme
     nwg-look
+    qt5-wayland
+    kvantum-qt5
 
     # asus rog/tuf specific
     asusctl
