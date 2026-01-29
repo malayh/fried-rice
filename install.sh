@@ -60,7 +60,8 @@ core_dependencies=(
 
     # asus rog/tuf specific
     asusctl
-    rog-control-center 
+    rog-control-center
+    supergfxctl
 
     # screenshot
     slurp
