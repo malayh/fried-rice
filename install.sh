@@ -68,6 +68,7 @@ core_dependencies=(
     grim
     wayfreeze
     satty
+    hyprpicker
     # gpu-screen-recorder
 
     # monitor control
@@ -83,7 +84,8 @@ user_apps=(
     just
 )
 
-sudo yay -Syu --noconfirm
+
+# sudo yay -Syu --noconfirm
 _installPackages "${general_tools[@]}"
 _installPackages "${core_dependencies[@]}"
 _installPackages "${user_apps[@]}"
